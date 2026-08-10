@@ -41,6 +41,7 @@ export default function App() {
   const [codeFehler, setCodeFehler]       = useState(false)
 
   const taktRef = useRef(null)
+  const erstFetchRef = useRef(false)
 
   // ── Apply theme to <html> ──
   useEffect(() => {
@@ -108,13 +109,18 @@ export default function App() {
     if (!newLive.length) setMeldung('Finnhub hat keine Kurse geliefert — API-Schlüssel prüfen.')
   }, [data, laden, kurse, wochen, tage])
 
-  // ── Start polling tick ──
+  // ── Start polling tick + immediate first fetch ──
   useEffect(() => {
     clearInterval(taktRef.current)
     if (!finnhubKey()) return
+    // Fire immediately on first load (once data is available)
+    if (!erstFetchRef.current) {
+      erstFetchRef.current = true
+      holeFinnhub(false)
+    }
     taktRef.current = setInterval(() => {
       if (!document.hidden) holeFinnhub(true)
-    }, 60_000)
+    }, 120_000)
     return () => clearInterval(taktRef.current)
   }, [holeFinnhub])
 
