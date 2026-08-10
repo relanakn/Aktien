@@ -1,0 +1,149 @@
+{
+  "ausgabe": {
+    "nummer": 42,
+    "kalenderwoche": "KW 33 / 2026",
+    "datum": "11. August – 15. August",
+    "redaktionsschluss": "Montag, 11. August 2026, 08:00 MESZ",
+    "kursstand": "Fr, 08.08.2026, 17:30 Uhr"
+  },
+  "editorial": {
+    "titel": "KI-Euphorie trifft Bewertungsrealität",
+    "signatur": "— Relana",
+    "absaetze": [
+      "Die Berichtssaison Q2 hat gezeigt: Wer in den vergangenen Quartalen auf KI-Infrastruktur gesetzt hat, erntet jetzt die ersten echten Umsatzzahlen. Nvidia, ASML und SAP übertrafen die Erwartungen teils deutlich — der Markt hatte es bereits eingepreist, die Reaktion fiel entsprechend verhalten aus.",
+      "Gleichzeitig warnen erste Analysten vor einer Konsolidierung. Die Bewertungen im Tech-Bereich liegen historisch hoch; eine Zinswende der Fed im September würde den Spielraum für weitere Multiple-Expansionen einengen. Wir bleiben selektiv und bevorzugen Qualitätstitel mit stabilen Margen.",
+      "Diese Woche im Fokus: SAP und ASML aus dem europäischen KI-Ökosystem sowie Microsoft als Proxy für Cloud-Nachfrage. Im Verkaufsbereich reduzieren wir Consumer-Discretionary, solange die Kaufzurückhaltung anhält."
+    ]
+  },
+  "thema": {
+    "kicker": "Schwerpunkt",
+    "titel": "Europas KI-Infrastruktur: Wer profitiert wirklich?",
+    "text": "Während die öffentliche Debatte um KI-Modelle kreist, verdienen die unsichtbaren Zulieferer. Halbleiterausrüster, Softwareplattformen und Cloud-Anbieter sehen strukturell steigende Nachfrage — unabhängig davon, welches Modell am Ende das Rennen macht.",
+    "punkte": [
+      "ASML besitzt ein De-facto-Monopol auf EUV-Lithographie — ohne diese Maschinen keine modernste KI-Chip-Produktion.",
+      "SAP's Business-KI ist kein Hype: 30.000 Unternehmenskunden integrieren KI-Workflows direkt in ERP-Prozesse.",
+      "Microsoft Azure wächst mit +29 % y/y und liefert den größten Einzelbeitrag zum Cloud-Marktanteil in Europa."
+    ]
+  },
+  "makro": [
+    { "label": "DAX", "wert": "18.842", "delta": "+0,8 %", "richtung": "up", "notiz": "5 Handelstage" },
+    { "label": "Euro Stoxx 50", "wert": "4.921", "delta": "+0,4 %", "richtung": "up", "notiz": "5 Handelstage" },
+    { "label": "EUR/USD", "wert": "1,0912", "delta": "−0,2 %", "richtung": "down", "notiz": "Wochenbasis" },
+    { "label": "10J Bund", "wert": "2,31 %", "delta": "+5 Bp", "richtung": "up", "notiz": "Rendite" },
+    { "label": "Öl (Brent)", "wert": "79,40 $", "delta": "−1,1 %", "richtung": "down", "notiz": "$/Barrel" }
+  ],
+  "buys": [
+    {
+      "ticker": "SAP",
+      "name": "SAP SE",
+      "boerse": "XETRA",
+      "isin": "DE0007164600",
+      "sektor": "Technologie",
+      "region": "Europa",
+      "kurs": 182.5,
+      "woche": 2.3,
+      "kgv": 38.2,
+      "mcap": "222 Mrd. €",
+      "risiko": "niedrig",
+      "fh": "",
+      "fhWaehrung": "",
+      "these": "SAP profitiert als führender ERP-Anbieter überproportional vom KI-Investitionszyklus in Unternehmen. Cloud-Wachstum von +27 % macht die Transformation sichtbar.",
+      "detail": "Der Übergang von On-Premise-Lizenzen zu Cloud-Abos erhöht die Umsatzsichtbarkeit erheblich. SAP Business AI ist in über 30.000 Unternehmen aktiv. Risiko: Hohe Bewertung lässt wenig Spielraum für Enttäuschungen.",
+      "spark": [175.2, 176.8, 174.5, 177.3, 178.9, 176.4, 179.2, 180.1, 178.7, 181.3, 183.0, 180.5, 181.9, 182.5]
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "boerse": "Euronext Amsterdam",
+      "isin": "NL0010273215",
+      "sektor": "Halbleiter",
+      "region": "Europa",
+      "kurs": 698.4,
+      "woche": 3.1,
+      "kgv": 32.7,
+      "mcap": "275 Mrd. €",
+      "risiko": "mittel",
+      "fh": "",
+      "fhWaehrung": "",
+      "these": "ASML ist der einzige Hersteller von EUV-Lithographieanlagen weltweit. Ohne diese Maschinen ist die Produktion modernster KI-Chips nicht möglich — strukturelles Wachstum gesichert.",
+      "detail": "Orderbuch für 2026 ist bereits zu 80 % gefüllt. China-Exportbeschränkungen wiegen kurzfristig, der Rest der Welt kompensiert. Dividendenrendite 0,9 % mit starkem Buyback-Programm.",
+      "spark": [671.0, 675.3, 680.1, 676.8, 682.4, 688.0, 685.2, 690.7, 694.1, 691.3, 695.8, 698.0, 696.5, 698.4]
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corp.",
+      "boerse": "NASDAQ",
+      "isin": "US5949181045",
+      "sektor": "Technologie",
+      "region": "USA",
+      "kurs": 423.8,
+      "woche": 1.7,
+      "kgv": 33.4,
+      "mcap": "3,15 Bio. $",
+      "risiko": "niedrig",
+      "fh": "MSFT",
+      "fhWaehrung": "USD",
+      "these": "Azure-Cloud und Copilot-Integration machen Microsoft zum Rückgrat des Unternehmens-KI-Marktes. Starke Margen und AAA-Bilanz.",
+      "detail": "Azure wächst +29 % y/y, Microsoft 365 Copilot wird in Q4 2026 zu einer Pflichtlizenz für Enterprise-Kunden. Risiko: Regulatorischer Druck in der EU.",
+      "spark": [415.2, 417.8, 414.3, 418.9, 420.1, 416.7, 419.5, 421.3, 418.8, 422.4, 424.0, 421.7, 422.9, 423.8]
+    }
+  ],
+  "sells": [
+    {
+      "ticker": "MCD",
+      "name": "McDonald's Corp.",
+      "boerse": "NYSE",
+      "isin": "US5801351017",
+      "sektor": "Consumer Discretionary",
+      "region": "USA",
+      "kurs": 287.5,
+      "woche": -2.1,
+      "kgv": 22.8,
+      "mcap": "207 Mrd. $",
+      "risiko": "mittel",
+      "fh": "MCD",
+      "fhWaehrung": "USD",
+      "these": "Rückläufige Besucherzahlen in den USA und Europa signalisieren anhaltende Kaufzurückhaltung bei Konsumenten unter Inflationsdruck. Margendruck durch höhere Löhne.",
+      "detail": "Same-Store-Sales global −1,0 % in Q2. Franchise-Modell gibt grundsätzlichen Puffer, aber höhere Zinsen belasten die Bewertung. Wir reduzieren die Position auf 50 %.",
+      "spark": [296.3, 294.8, 293.2, 291.7, 289.5, 292.1, 290.8, 288.3, 291.0, 289.2, 287.8, 290.4, 288.9, 287.5]
+    },
+    {
+      "ticker": "ZAL",
+      "name": "Zalando SE",
+      "boerse": "XETRA",
+      "isin": "DE000ZAL1111",
+      "sektor": "E-Commerce",
+      "region": "Europa",
+      "kurs": 24.8,
+      "woche": -3.4,
+      "kgv": 41.2,
+      "mcap": "6,1 Mrd. €",
+      "risiko": "hoch",
+      "fh": "",
+      "fhWaehrung": "",
+      "these": "Europaweite Konsumflaute trifft das Fashion-E-Commerce-Segment hart. Zalando leidet unter sinkendem AOV und steigenden Retouren-Kosten.",
+      "detail": "Q2-Ergebnis lag 15 % unter Konsenserwartung. Konkurrenz durch Shein und Temu erhöht den Preisdruck. Das Plattformmodell ist langfristig interessant, kurzfristig bevorzugen wir Risikoreduktion.",
+      "spark": [27.3, 26.9, 26.2, 27.1, 26.5, 25.8, 26.3, 25.6, 25.2, 26.0, 25.4, 24.9, 25.3, 24.8]
+    }
+  ],
+  "sektoren": [
+    { "name": "Technologie",          "woche": 2.8 },
+    { "name": "Halbleiter",           "woche": 3.5 },
+    { "name": "Gesundheit",           "woche": 0.4 },
+    { "name": "Finanzen",             "woche": 1.1 },
+    { "name": "Energie",              "woche": -0.7 },
+    { "name": "Konsumgüter",          "woche": -1.8 },
+    { "name": "Industrie",            "woche": 0.9 },
+    { "name": "Telekommunikation",    "woche": -0.3 },
+    { "name": "Grundstoffe",          "woche": 0.6 },
+    { "name": "Immobilien",           "woche": -1.2 }
+  ],
+  "termine": [
+    { "tag": "Mo, 11.8.", "titel": "Siemens Energy Quartalszahlen Q3",    "typ": "Zahlen" },
+    { "tag": "Di, 12.8.", "titel": "US-Inflationsdaten Juli (CPI)",        "typ": "Makro" },
+    { "tag": "Mi, 13.8.", "titel": "Infineon Quartalszahlen Q3",           "typ": "Zahlen" },
+    { "tag": "Do, 14.8.", "titel": "EZB-Protokoll Juli-Sitzung",           "typ": "Zinsen" },
+    { "tag": "Fr, 15.8.", "titel": "Verfalltag XETRA + NYSE (Triple Witching)", "typ": "Derivate" }
+  ],
+  "disclaimer": "Diese Veröffentlichung dient ausschließlich Informationszwecken und stellt keine Anlageberatung, keine Aufforderung zum Kauf oder Verkauf von Wertpapieren und keine Finanzanalyse gemäß § 34b WpHG dar. Alle Angaben ohne Gewähr. Jede Anlageentscheidung ist auf eigenes Risiko und nach eigener Beurteilung zu treffen. Vergangene Wertentwicklungen sind kein verlässlicher Indikator für zukünftige Ergebnisse."
+}
