@@ -41,7 +41,8 @@ export default function App() {
   const [codeFehler, setCodeFehler]       = useState(false)
 
   const taktRef = useRef(null)
-  const erstFetchRef = useRef(false)
+  const fetchingRef = useRef(false)
+  const dataReadyRef = useRef(false)
 
   // ── Apply theme to <html> ──
   useEffect(() => {
@@ -75,18 +76,22 @@ export default function App() {
 
   // ── Finnhub live fetch ──
   const finnhubKey = () => (import.meta.env.VITE_FINNHUB_KEY || '').trim()
+  const dataRef = useRef(null)
+  useEffect(() => { dataRef.current = data }, [data])
 
   const holeFinnhub = useCallback(async (still) => {
-    if (!data || !finnhubKey() || laden) return
+    const d = dataRef.current
+    if (!d || !finnhubKey() || fetchingRef.current) return
+    fetchingRef.current = true
     if (!still) setLaden(true)
-    const alle = [...data.buys, ...data.sells].filter(s => s.fh)
+    const alle = [...d.buys, ...d.sells].filter(s => s.fh)
     let fx = null
     try {
       const r = await fetch('https://api.frankfurter.dev/v1/latest?base=USD&symbols=EUR')
       const j = await r.json()
       if (j?.rates?.EUR) fx = j.rates.EUR
     } catch {}
-    const newKurse = { ...kurse }, newWochen = { ...wochen }, newTage = { ...tage }
+    const newKurse = {}, newTage = {}
     const newLive = []
     await Promise.all(alle.map(async s => {
       try {
@@ -101,28 +106,28 @@ export default function App() {
         newLive.push(s.ticker)
       } catch {}
     }))
+    fetchingRef.current = false
     setLaden(false)
     setKurse(newKurse)
     setTage(newTage)
     setLive(newLive)
     setStand(new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit' }))
     if (!newLive.length) setMeldung('Finnhub hat keine Kurse geliefert — API-Schlüssel prüfen.')
-  }, [data, laden, kurse, wochen, tage])
+  }, [])
 
-  // ── Start polling tick + immediate first fetch ──
+  // ── Fire immediately when data first loads, then every 2 minutes ──
   useEffect(() => {
-    clearInterval(taktRef.current)
-    if (!finnhubKey()) return
-    // Fire immediately on first load (once data is available)
-    if (!erstFetchRef.current) {
-      erstFetchRef.current = true
+    if (!data || !finnhubKey()) return
+    if (!dataReadyRef.current) {
+      dataReadyRef.current = true
       holeFinnhub(false)
+      clearInterval(taktRef.current)
+      taktRef.current = setInterval(() => {
+        if (!document.hidden) holeFinnhub(true)
+      }, 120_000)
     }
-    taktRef.current = setInterval(() => {
-      if (!document.hidden) holeFinnhub(true)
-    }, 120_000)
     return () => clearInterval(taktRef.current)
-  }, [holeFinnhub])
+  }, [data, holeFinnhub])
 
   // ── Admin: save draft ──
   function speichern() {
