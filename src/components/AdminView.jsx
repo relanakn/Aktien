@@ -48,19 +48,19 @@ function AdminPositionRow({ seite, i, entwurf, setzeWert, raus, ruecke, adminOff
       <span className="corner tl" /><span className="corner tr" /><span className="corner bl" /><span className="corner br" />
       {/* Row header */}
       <div
-        style={{ display: 'grid', gridTemplateColumns: '30px 1fr 130px 108px 96px 34px 34px 34px', alignItems: 'center', gap: 12, padding: '12px 16px', cursor: 'pointer' }}
+        className="admin-pos-row"
         onClick={() => toggleAdminOffen(key)}
       >
-        <div style={{ fontFamily: 'var(--font-heading)', fontSize: 13, opacity: 0.45 }}>{String(i + 1).padStart(2, '0')}</div>
+        <div className="admin-pos-row-nr" style={{ fontFamily: 'var(--font-heading)', fontSize: 13, opacity: 0.45 }}>{String(i + 1).padStart(2, '0')}</div>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: 9, minWidth: 0 }}>
           <span style={{ fontFamily: 'var(--font-heading)', fontSize: 19 }}>{s.ticker || '—'}</span>
           <span style={{ fontSize: 13, opacity: 0.6, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s.name}</span>
         </div>
-        <div style={{ fontSize: 13.5, textAlign: 'right', fontVariantNumeric: 'tabular-nums' }}>{zahl(s.kurs).toFixed(2).replace('.', ',')} €</div>
+        <div className="admin-pos-row-kurs" style={{ fontSize: 13.5, textAlign: 'right', fontVariantNumeric: 'tabular-nums' }}>{zahl(s.kurs).toFixed(2).replace('.', ',')} €</div>
         <div style={{ fontSize: 13, textAlign: 'right', fontVariantNumeric: 'tabular-nums', color: wocheFarbe }}>
           {(w > 0 ? '+' : '') + w.toFixed(1).replace('.', ',')} %
         </div>
-        <div style={{ fontSize: 11, opacity: 0.5 }}>{s.fh ? `live · ${s.fh}` : 'manuell'}</div>
+        <div className="admin-pos-row-src" style={{ fontSize: 11, opacity: 0.5 }}>{s.fh ? `live · ${s.fh}` : 'manuell'}</div>
         <button className="btn btn-ghost btn-icon" onClick={e => { e.stopPropagation(); ruecke(seite, i, -1) }} title="nach oben" style={{ fontSize: 11 }}>▲</button>
         <button className="btn btn-ghost btn-icon" onClick={e => { e.stopPropagation(); ruecke(seite, i, 1) }} title="nach unten" style={{ fontSize: 11 }}>▼</button>
         <div style={{ textAlign: 'center', color: 'var(--color-accent)', fontSize: 12 }}>{offen ? '▲' : '▼'}</div>
@@ -69,7 +69,7 @@ function AdminPositionRow({ seite, i, entwurf, setzeWert, raus, ruecke, adminOff
       {/* Expanded fields */}
       {offen && (
         <div style={{ padding: '4px 16px 18px', borderTop: '1px solid var(--color-divider)', display: 'flex', flexDirection: 'column', gap: 14 }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '110px 1.4fr 1fr 1fr', gap: '12px 14px', paddingTop: 14 }}>
+          <div className="admin-pos-fields">
             <DraftInput label="Ticker"  value={s.ticker}  onChange={e => setzeWert(`${pfx}.ticker`, e.target.value)} />
             <DraftInput label="Name"    value={s.name}    onChange={e => setzeWert(`${pfx}.name`, e.target.value)} />
             <DraftInput label="Börse"   value={s.boerse}  onChange={e => setzeWert(`${pfx}.boerse`, e.target.value)} />
@@ -178,8 +178,8 @@ export default function AdminView(props) {
 
       {/* ── Admin header ── */}
       <header style={{ position: 'sticky', top: 0, zIndex: 40, background: 'var(--kopf-bg)' }}>
-        <div style={{ maxWidth: 1440, margin: '0 auto', padding: '14px 40px', display: 'flex', alignItems: 'center', gap: 18 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginRight: 'auto' }}>
+        <div className="admin-header-inner">
+          <div className="admin-header-brand" style={{ display: 'flex', alignItems: 'center', gap: 12, marginRight: 'auto' }}>
             <Logo size={34} />
             <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
               <div style={{ fontFamily: 'var(--font-heading)', fontSize: 21, lineHeight: 1.05 }}>
@@ -190,7 +190,7 @@ export default function AdminView(props) {
               </div>
             </div>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <div className="admin-header-actions">
             <button className="btn btn-ghost" onClick={neueAusgabe} style={{ fontSize: 12, padding: '5px 11px' }} title="Ausgabennummer und Datumsangaben auf die kommende Woche setzen">
               Neue Woche
             </button>
@@ -206,7 +206,7 @@ export default function AdminView(props) {
         </div>
 
         {/* Tab bar */}
-        <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 40px 12px', display: 'flex', alignItems: 'center', gap: 14 }}>
+        <div className="admin-tabs-row">
           <div className="seg">
             {[
               { id: 'ausgabe', label: 'Ausgabe & Kommentar' },
@@ -228,11 +228,11 @@ export default function AdminView(props) {
         <div style={{ height: 1, background: 'var(--kopf-linie)' }} />
       </header>
 
-      <main style={{ maxWidth: 1440, margin: '0 auto', padding: '32px 40px 72px' }}>
+      <main className="admin-main">
 
         {/* ── Tab: Ausgabe & Kommentar ── */}
         {adminTab === 'ausgabe' && (
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 400px', gap: 36, alignItems: 'start' }}>
+          <div className="admin-ausgabe-grid">
             <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
 
               {/* Kopfdaten */}
@@ -343,7 +343,7 @@ export default function AdminView(props) {
 
         {/* ── Tab: Markt & Termine ── */}
         {adminTab === 'markt' && (
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32 }}>
+          <div className="admin-markt-grid">
 
             {/* Makro */}
             <div className="blueprint" style={{ padding: '22px 24px' }}>
@@ -422,7 +422,7 @@ export default function AdminView(props) {
 
         {/* ── Tab: Datei & Archiv ── */}
         {adminTab === 'datei' && (
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32 }}>
+          <div className="admin-datei-grid">
 
             {/* Datei-Aktionen */}
             <div className="blueprint" style={{ padding: '22px 24px' }}>
