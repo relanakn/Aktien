@@ -5,10 +5,15 @@ export const nf = (v, d) =>
 // ── Deep clone ──
 export const klon = o => JSON.parse(JSON.stringify(o))
 
-// ── Safe number parse (handles German decimals) ──
+// ── Safe number parse (handles German decimals and Unicode minus signs) ──
 export const zahl = x => {
   if (typeof x === 'number') return isNaN(x) ? 0 : x
-  const n = parseFloat(String(x == null ? '' : x).replace(/\s/g, '').replace(',', '.'))
+  const n = parseFloat(
+    String(x == null ? '' : x)
+      .replace(/\s/g, '')
+      .replace(/[\u2212\u2013\u2014]/g, '-')
+      .replace(',', '.')
+  )
   return isNaN(n) ? 0 : n
 }
 
