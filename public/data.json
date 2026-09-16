@@ -161,6 +161,48 @@
         422.9,
         423.8
       ]
+    },
+    {
+      "ticker": "TTE",
+      "name": "TotalEnergies SE",
+      "boerse": "Euronext Paris",
+      "isin": "FR0014000MR3",
+      "sektor": "Energie",
+      "region": "Europa",
+      "kurs": 71.2,
+      "woche": 2.3,
+      "kgv": 8.9,
+      "mcap": "155 Mrd. €",
+      "risiko": "mittel",
+      "fh": "TTE",
+      "fhWaehrung": "USD",
+      "these": "TotalEnergies profitiert direkt vom Brent-Ölpreis über 100 Dollar. Als integrierter Energiekonzern (Förderung, LNG, Raffinerie) generiert das Unternehmen bei diesem Preisniveau massiven freien Cashflow.",
+      "detail": "Dividendenrendite ~4,5 % mit stetig wachsender Ausschüttung und laufendem Aktienrückkaufprogramm. Gleichzeitig investiert TotalEnergies in Offshore-Wind und Solar – das schützt vor ESG-Ausschlüssen institutioneller Investoren. Risiko: Ölpreisrückgang unter 80 Dollar.",
+      "spark": [
+        67.5, 68.1, 67.8, 69.2, 70.1, 69.5, 70.8, 71.3,
+        70.6, 71.9, 72.4, 71.8, 70.9, 71.2
+      ]
+    },
+    {
+      "ticker": "RHM",
+      "name": "Rheinmetall AG",
+      "boerse": "XETRA",
+      "isin": "DE0007030009",
+      "sektor": "Rüstung / Industrie",
+      "region": "Europa",
+      "kurs": 847.0,
+      "woche": 0.8,
+      "kgv": 27.4,
+      "mcap": "32 Mrd. €",
+      "risiko": "mittel",
+      "fh": "RHIM",
+      "fhWaehrung": "USD",
+      "these": "Rheinmetall ist der direkte Profiteur des NATO-Rüstungsbooms. Das deutsche Sondervermögen von 100 Mrd. Euro für die Bundeswehr sowie steigende Verteidigungsbudgets der NATO-Partner füllen das Orderbuch auf Jahre hinaus.",
+      "detail": "Der Auftragsbestand übersteigt den Jahresumsatz um das Drei- bis Vierfache – ungewöhnlich hohe Earnings-Visibilität für einen Industriewert. Kurs kann kurzfristig volatil sein, langfristige Wachstumsthese jedoch intakt. Risiko: Geopolitische Deeskalation.",
+      "spark": [
+        820.0, 825.0, 818.0, 832.0, 841.0, 836.0, 843.0, 851.0,
+        845.0, 855.0, 862.0, 853.0, 849.0, 847.0
+      ]
     }
   ],
   "sells": [
@@ -228,6 +270,48 @@
         24.9,
         25.3,
         24.8
+      ]
+    },
+    {
+      "ticker": "VNA",
+      "name": "Vonovia SE",
+      "boerse": "XETRA",
+      "isin": "DE000A1ML7J1",
+      "sektor": "Immobilien",
+      "region": "Europa",
+      "kurs": 26.4,
+      "woche": -2.5,
+      "kgv": 14.2,
+      "mcap": "10,5 Mrd. €",
+      "risiko": "hoch",
+      "fh": "VONOY",
+      "fhWaehrung": "USD",
+      "these": "Vonovia ist der klassische Verlierer einer Zinserhöhung. Europas größter Wohnimmobilienkonzern trägt Milliarden an Schulden, deren Refinanzierung mit jeder Fed- und EZB-Erhöhung teurer wird.",
+      "detail": "Mietregulierung begrenzt die Einnahmenseite, während die Kapitalkosten steigen – eine strukturell ungünstige Schere. Immobilienbewertungen stehen zusätzlich unter Abwertungsdruck. Wir empfehlen vollständige Auflösung der Position.",
+      "spark": [
+        28.2, 27.8, 27.4, 28.1, 27.6, 27.0, 27.5, 26.9,
+        27.2, 26.8, 26.4, 27.0, 26.7, 26.4
+      ]
+    },
+    {
+      "ticker": "DHER",
+      "name": "Delivery Hero SE",
+      "boerse": "XETRA",
+      "isin": "DE000A2E4K43",
+      "sektor": "Food Delivery",
+      "region": "Europa",
+      "kurs": 28.5,
+      "woche": -1.8,
+      "kgv": 0,
+      "mcap": "5,8 Mrd. €",
+      "risiko": "hoch",
+      "fh": "DHER",
+      "fhWaehrung": "USD",
+      "these": "Delivery Hero ist auf operativer Ebene noch immer verlustbringend und hat einen hohen Kapitalbedarf. Steigende Zinsen machen das Modell noch teurer zu finanzieren, während Konsumenten beim Essensliefern sparen.",
+      "detail": "Wachstumsbewertung ohne Gewinne ist in einem Zinserhöhungszyklus nicht haltbar. Konkurrenz von Uber Eats und lokalen Plattformen erhöht den Druck. Keine Dividende, kein positiver Cashflow – auflösen.",
+      "spark": [
+        31.2, 30.5, 29.8, 30.4, 29.7, 29.1, 29.6, 28.9,
+        29.3, 28.7, 28.2, 28.8, 28.5, 28.5
       ]
     }
   ],
