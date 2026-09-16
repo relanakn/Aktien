@@ -1,0 +1,39 @@
+name: Wöchentliches Content-Update
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'   # Jeden Montag um 07:00 UTC (08:00 CET / 09:00 CEST)
+  workflow_dispatch:        # Auch jederzeit manuell auslösbar
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write       # Damit der Bot in das Repo pushen darf
+
+    steps:
+      - name: Code abrufen
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Pakete installieren
+        run: pip install anthropic yfinance requests
+
+      - name: Content generieren
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python scripts/generate_weekly.py
+
+      - name: Änderungen committen und pushen
+        run: |
+          git config user.name "Relana Bot"
+          git config user.email "bot@relana.de"
+          git add public/data.json
+          git diff --staged --quiet || git commit -m "Weekly Update KW$(date +'%V') / $(date +'%Y')"
+          git push
