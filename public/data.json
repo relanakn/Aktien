@@ -1,63 +1,63 @@
 {
   "ausgabe": {
-    "nummer": 44,
-    "kalenderwoche": "KW 35 / 2026",
-    "datum": "24.08. - 29.08.2026",
-    "redaktionsschluss": "Montag, 24. August 2026, 08:00 MESZ",
-    "kursstand": ""
+    "nummer": 45,
+    "kalenderwoche": "KW 38 / 2026",
+    "datum": "14.09. – 18.09.2026",
+    "redaktionsschluss": "Mittwoch, 16. September 2026, 10:00 MESZ",
+    "kursstand": "16.09.2026, 10:00 Uhr"
   },
   "editorial": {
-    "titel": "KI-Euphorie trifft Bewertungsrealität",
+    "titel": "Fed erhöht erstmals seit 2023 – Öl über 100 Dollar",
     "signatur": "— Relana",
     "absaetze": [
-      "Die Berichtssaison Q2 hat gezeigt, wer in den vergangenen Quartalen auf KI-Infrastruktur gesetzt hat, erntet jetzt die ersten echten Umsatzzahlen. Nvidia, ASML und SAP übertrafen die Erwartungen teils deutlich, doch der Markt hatte es bereits eingepreist, die Reaktion fiel entsprechend verhalten aus.\n\nAbseits der großen Tech-Namen lieferte die Woche einen der spektakulärsten Einzeltage des Jahres: Moderna verdreifachte seinen Börsenwert innerhalb weniger Stunden, nachdem Phase-3-Daten eines mRNA-Krebsimpfstoffs beide Endpunkte trafen. Short-Seller verloren geschätzt 5,5 Milliarden Dollar an einem Nachmittag. Die Aktie erinnert daran, dass Biotech-Katalysatoren weiterhin die stärksten Einzelimpulse am Markt setzen können, auch wenn das Makro-Bild gerade von Anleiherenditen und Geopolitik dominiert wird.",
-      "Diese Woche verdichtet sich jedoch alles auf den Mittwoch: Nvidia liefert Quartalszahlen (Konsens: 92 Milliarden Dollar Umsatz, +96 Prozent), gleichzeitig kommen die PCE-Inflationsdaten mit einer erwarteten Kern-PCE-Jahresrate von 3,3 Prozent. Ab Donnerstag folgt Jackson Hole, wo Fed-Chairman Warsh sein Debüt gibt. Der Markt erwartet Neutralität, fürchtet aber jede hawkische Nuance bei aktuell 31 Prozent Wahrscheinlichkeit für eine September-Erhöhung.\n\nDer Hintergrund: Steigende Anleiherenditen haben den S&P 500 vergangene Woche 1,4 Prozent gekostet, der DAX schloss bei 26.137 Punkten mit einem Wochenminus von 1,2 Prozent. Die Konjunkturdaten aus Deutschland überraschen derweil positiv, der Industrie-PMI liegt bei 54,1, das ZEW-Barometer bei 34,2.",
-      "Fazit: Bis Mittwochabend dürfte wenig passieren. Danach wird entweder gefeiert oder verkauft."
+      "Die US-Notenbank hat die Leitzinsen diese Woche zum ersten Mal seit Juli 2023 angehoben. Fed-Chair Warsh begründete den Schritt mit hartnäckig hoher Kerninflation und einem Ölpreis, der zeitweise über 110 Dollar je Barrel kletterte. Brent notiert aktuell bei 105,55 Dollar – ein Niveau, das die PCE-Inflation im September voraussichtlich erneut nach oben treiben wird. Der Dow Jones verlor in der Reaktion 1,2 Prozent, der S&P 500 gab 0,5 Prozent nach. Der DAX hielt sich dank eines schwächeren Euros (EUR/USD: 1,1456) vergleichsweise stabil bei 25.538 Punkten.",
+      "Deutlich spürbarer war der Druck bei europäischen Automobilwerten: Volkswagen verlor 2,6 Prozent, Mercedes-Benz 2,6 Prozent – schwächelnder China-Absatz und steigende Rabattanforderungen belasten die Margen strukturell. Auf der Gegenseite profitierten Energiewerte: Siemens Energy legte 3,1 Prozent zu, RWE stieg um 2,8 Prozent. Ein anhaltend hoher Ölpreis wirkt als Rückenwind für die gesamte Energiekette. Gold erreichte mit 4.262 Dollar ein neues Allzeithoch – ein deutliches Zeichen, dass der Markt die Lage ernst nimmt.",
+      "Die entscheidende Frage für den Rest des Jahres: Handelt es sich um einen einmaligen Schritt, oder hat die Fed den Startschuss für einen neuen Erhöhungszyklus gegeben?"
     ]
   },
   "thema": {
     "kicker": "Schwerpunkt",
-    "titel": "Zinsen gegen Gewinne: der Kampf um die Bewertung",
-    "text": "Seit Mitte August dominiert der Anleihenmarkt das Geschehen. Steigende Langfristrenditen, getrieben von fiskalischer Unsicherheit, hartnäckiger Inflation und einem Ölpreis nahe 100 Dollar, stellen die Bewertungsprämie von Wachstumsaktien zunehmend infrage. Der S&P 500 verlor vergangene Woche 1,4 Prozent, der DAX 1,2 Prozent, nicht weil die Unternehmen schwächer liefern, sondern weil Anleihen wieder eine echte Rendite-Alternative bieten.",
+    "titel": "Zinswende 2.0: Was der Fed-Entscheid jetzt bedeutet",
+    "text": "Die US-Notenbank hat mit ihrer überraschenden Zinserhöhung eine Debatte ausgelöst, die Aktien-, Anleihe- und Rohstoffmärkte gleichermaßen erfasst. Die Kombination aus hohem Ölpreis, anziehender Kerninflation und restriktiver Geldpolitik ist die gefährlichste Mischung für wachstumsstarke Bewertungen.",
     "punkte": [
-      "Die 30-jährige Bundesanleihe notiert bei 3,79 Prozent, dem höchsten Stand seit 2011. Das US-Finanzministerium verdoppelte sein Rückkaufprogramm, verschaffte dem Markt aber nur eine kurze Atempause.",
-      "Öl bleibt der unsichtbare Inflationstreiber. Irans Ankündigung einer „voll offensiven\" Militärstrategie hält die Risikoprämie hoch und macht eine schnelle Entspannung bei den Energiepreisen unwahrscheinlich.",
-      "Jackson Hole wird zum Stresstest: Sollte Fed-Chair Warsh am Freitag auch nur eine leicht restriktive Nuance setzen, dürften Renditen erneut steigen und die ohnehin fragile Stimmung bei wachstumsstarken Tech-Werten weiter belasten."
+      "Brent-Öl bei 105,55 Dollar: Geopolitische Risikoprämien und gedrosselte OPEC+-Förderung halten den Preis hoch. Jeder Dollar mehr bei Öl bedeutet rund 0,1 Prozentpunkte mehr Kerninflation – ein direkter Transmissionsriemen zur Fed.",
+      "Gold auf Rekordniveau bei 4.262 Dollar: Der traditionelle Krisenindikator signalisiert Unsicherheit. Höhere Realzinsen und ein stärkerer Dollar hätten den Goldpreis normalerweise gedeckelt – das Gegenteil ist der Fall.",
+      "Halbleiterwerte unter Druck: Micron sieht sich mit Gewerkschaftsrisiken konfrontiert, höhere Kapitalkosten bei gleichzeitig möglicher KI-Nachfrageabkühlung machen den Sektor kurzfristig anfällig."
     ]
   },
   "makro": [
     {
       "label": "DAX",
-      "wert": "26.137",
-      "delta": "−1,2 %",
+      "wert": "25.538",
+      "delta": "−1,4 %",
       "richtung": "down",
       "notiz": "5 Handelstage"
     },
     {
       "label": "Euro Stoxx 50",
-      "wert": "6.462",
-      "delta": "−1,3 %",
+      "wert": "6.261",
+      "delta": "−1,9 %",
       "richtung": "down",
       "notiz": "5 Handelstage"
     },
     {
       "label": "EUR/USD",
-      "wert": "1,1680",
-      "delta": "+0,9 %\t",
-      "richtung": "up",
+      "wert": "1,1456",
+      "delta": "−1,1 %",
+      "richtung": "down",
       "notiz": "Wochenbasis"
     },
     {
       "label": "10J Bund",
-      "wert": "3,26 %",
-      "delta": "+6 Bp",
+      "wert": "3,38 %",
+      "delta": "+12 Bp",
       "richtung": "up",
-      "notiz": "Rendite (15-J.-Hoch)"
+      "notiz": "Rendite"
     },
     {
       "label": "Öl (Brent)",
-      "wert": "94,39 $",
-      "delta": "+6,4 %",
+      "wert": "105,55 $",
+      "delta": "+8,8 %",
       "richtung": "up",
       "notiz": "$/Barrel"
     }
@@ -234,75 +234,70 @@
   "sektoren": [
     {
       "name": "Technologie",
-      "woche": 0
+      "woche": -0.8
     },
     {
       "name": "Halbleiter",
-      "woche": 0
+      "woche": -1.5
     },
     {
       "name": "Gesundheit",
-      "woche": 1.2
+      "woche": 0.3
     },
     {
       "name": "Finanzen",
-      "woche": 0
+      "woche": -1.2
     },
     {
       "name": "Energie",
-      "woche": -0.7
+      "woche": 2.5
     },
     {
       "name": "Konsumgüter",
-      "woche": 0
+      "woche": -1.8
     },
     {
       "name": "Industrie",
-      "woche": 0
+      "woche": 0.8
     },
     {
       "name": "Telekommunikation",
-      "woche": 0
+      "woche": -0.6
     },
     {
       "name": "Grundstoffe",
-      "woche": 1.8
+      "woche": -0.4
     },
     {
       "name": "Immobilien",
-      "woche": 0
+      "woche": -2.2
     }
   ],
   "termine": [
     {
-      "tag": "Di, 25.8.",
-      "titel": "US-Verbrauchervertrauen (August)",
+      "tag": "Mo, 14.9.",
+      "titel": "US-Einzelhandelsumsätze August",
       "typ": "Makro"
     },
     {
-      "tag": "Mi, 26.8",
-      "titel": "US-PCE-Inflation Juli + BIP-Revision Q2",
+      "tag": "Di, 15.9.",
+      "titel": "Fed-Zinsentscheidung: erste Erhöhung seit Juli 2023",
+      "typ": "Zinsen"
+    },
+    {
+      "tag": "Mi, 16.9.",
+      "titel": "US-Baugenehmigungen & Baubeginne August",
       "typ": "Makro"
     },
     {
-      "tag": "Mi, 26.8.",
-      "titel": "Nvidia Quartalszahlen Q2 (nach Börsenschluss)",
-      "typ": "Zahlen"
-    },
-    {
-      "tag": "Do, 27.8.\t",
-      "titel": "Jackson Hole Symposium beginnt",
+      "tag": "Do, 17.9.",
+      "titel": "EZB-Protokoll der Juli-Sitzung",
       "typ": "Zinsen"
     },
     {
-      "tag": "Fr, 28.8.",
-      "titel": "Fed-Chair Warsh Keynote (Jackson Hole)",
-      "typ": "Zinsen"
-    },
-    {
-      "tag": "Fr, 29.8.",
-      "titel": "Salesforce Quartalszahlen",
-      "typ": "Zahlen"
+      "tag": "Fr, 18.9.",
+      "titel": "Uni Michigan Verbrauchervertrauen (Vorab)",
+      "typ": "Makro"
     }
   ],
   "disclaimer": "Diese Veröffentlichung dient ausschließlich Informationszwecken und stellt keine Anlageberatung, keine Aufforderung zum Kauf oder Verkauf von Wertpapieren und keine Finanzanalyse gemäß § 34b WpHG dar. Alle Angaben ohne Gewähr. Jede Anlageentscheidung ist auf eigenes Risiko und nach eigener Beurteilung zu treffen. Vergangene Wertentwicklungen sind kein verlässlicher Indikator für zukünftige Ergebnisse."
